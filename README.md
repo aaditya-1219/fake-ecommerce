@@ -1,8 +1,13 @@
-# React + Vite
+# Fake E-commerce App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description: 
 
-Currently, two official plugins are available:
+A dummy/fake e-commerce application made using [Fake Store API](https://fakestoreapi.com/).
+The app provides a simulated shopping experience with a wide range of fake products. Users can browse categories, add items to their cart, and proceed through a mock checkout process. The app features a user-friendly interface, and realistic product descriptions. All product data is fetched from Fake Store API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+## User interface
+
+#### Product page
+![image](https://github.com/user-attachments/assets/8e2a1ea1-3eaa-48f9-bbbe-99e6788b4865)
