@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake E-Commerce Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+    <script src="https://kit.fontawesome.com/98fdc47a54.js" crossorigin="anonymous"></script>
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script>
+      document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('dropdown');
+        if(dropdown == null) return
+        const button = dropdown.previousElementSibling;
+        if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+            dropdown.classList.add('hidden');
+        }
+      });
+    </script>
+  </body>
+</html>
