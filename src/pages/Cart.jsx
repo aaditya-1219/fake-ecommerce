@@ -32,7 +32,7 @@ function Cart() {
 		cartArray.forEach(product => {
 			total += parseFloat(product.price * product.quantity)
 		});
-		return total
+		return total.toFixed(2)
 	}
 	return (
 		<div className="p-4 pb-6 font-semibold text-2xl">
@@ -44,10 +44,10 @@ function Cart() {
 					<div className="flex flex-col gap-2">
 						{cartArray.map((product, index) => {
 							return (
-								<>
+								<React.Fragment key={index}>
 									<CartItem key={index} product={product} />
 									<Divider />
-								</>
+								</React.Fragment>
 							);
 						})}
 					</div>

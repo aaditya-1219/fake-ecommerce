@@ -44,7 +44,10 @@ function App() {
 		const userEmail = localStorage.getItem('userEmail');
 		if(userEmail) {
 			dispatch(loginUser(userEmail));
-			fetchCart(userEmail)
+			(async () => {
+				await refreshAccessToken();
+				fetchCart(userEmail);
+			})();
 		}
 	}, [])
 
